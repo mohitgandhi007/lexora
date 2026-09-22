@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#fdf9f2", "on-primary-container": "#868381", "primary": "#000000", "on-tertiary-fixed": "#2d1600", "tertiary-fixed-dim": "#f0bd8e", "on-surface": "#1c1c18", "primary-fixed-dim": "#cac6c3", "error": "#ba1a1a", "on-primary-fixed": "#1d1b1a", "error-container": "#ffdad6", "on-secondary-container": "#723000", "inverse-on-surface": "#f4f0e9", "on-background": "#1c1c18", "background": "#fdf9f2", "secondary-container": "#fd975d", "secondary": "#974813", "inverse-surface": "#31302c", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#623f1b", "surface-variant": "#e6e2db", "on-secondary-fixed-variant": "#773200", "on-primary-fixed-variant": "#484645", "on-tertiary-container": "#a77b51", "inverse-primary": "#cac6c3", "on-error": "#ffffff", "surface-container-high": "#ece8e1", "outline-variant": "#cdc5bd", "surface": "#fdf9f2", "surface-dim": "#dddad3", "secondary-fixed-dim": "#ffb68f", "on-secondary-fixed": "#331100", "surface-container": "#f1ede6", "on-primary": "#ffffff", "surface-container-low": "#f7f3ec", "surface-tint": "#605e5c", "secondary-fixed": "#ffdbca", "primary-fixed": "#e6e1df", "on-secondary": "#ffffff", "outline": "#7c766f", "tertiary": "#000000", "primary-container": "#1d1b1a", "surface-container-highest": "#e6e2db", "on-tertiary": "#ffffff", "tertiary-container": "#2d1600", "on-error-container": "#93000a", "on-surface-variant": "#4b4640", "tertiary-fixed": "#ffdcbe" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1.25rem", "space-lg": "1.25rem", "space-xl": "2rem", "space-md": "0.75rem" }, "fontFamily": { "display-lg-mobile": [ "Playfair Display" ], "title-lg": [ "Manrope" ], "headline-sm": [ "Playfair Display" ], "display-lg": [ "Playfair Display" ], "body-lg": [ "Manrope" ], "body-sm": [ "Manrope" ], "headline-lg": [ "Playfair Display" ], "body-md": [ "Manrope" ], "numeral-section": [ "Playfair Display" ], "title-md": [ "Manrope" ], "label-sm": [ "Manrope" ], "headline-md": [ "Playfair Display" ], "label-md": [ "Manrope" ] }, "fontSize": { "display-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "title-lg": [ "16px", { "lineHeight": "22px", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "500" } ], "display-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "numeral-section": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "400" } ], "title-md": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" } ], "headline-md": [ "20px", { "lineHeight": "28px", "fontWeight": "500" } ], "label-md": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W6yy4-64OcuJLjEZZikcPDUx5pZeInWTA1aQWI_kNAFmo1vSDpE5_0ftr15uCIawaftfylf3DpsRJ5SLzjzjqotvfdtoOgb_pDqMy_GMdqd_U-kfMsS5Z5ReeZ3K1SzpqOlJYRT9gbNv1-3PsDCi5DkU8CFT6qW_nEjQOU1ExIhgpYCtOSANG17DSpDLt0mKr9Tll4Kiad4R8gkptNiqiCY-kwA7Vl8AHPQLlMUtI"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Lexora</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Appellate Intelligence</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 bg-surface-container-low rounded-lg" data-active-classes="bg-surface-container-high text-on-surface font-title-md"><a class="px-space-md py-1.5 rounded text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-md py-1.5 rounded text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors" data-path="documents" href="#">Documents</a><a class="px-space-md py-1.5 rounded text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors" data-path="summaries" href="#">Summaries</a><a class="px-space-md py-1.5 rounded text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors" data-path="search" href="#">Search</a><a aria-current="page" class="px-space-md py-1.5 rounded transition-colors bg-surface-container-high text-on-surface font-title-md" data-path="settings" href="#">Settings</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs bg-surface-container px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm italic pr-space-sm">Search precedents, statutes (⌘K)</span></div><button aria-label="Notifications" class="relative p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><a class="flex items-center gap-space-sm pl-space-xs group rounded-lg p-1 hover:bg-surface-container transition-colors" data-path="settings" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm ring-1 ring-secondary/20" src="https://lh3.googleusercontent.com/aida/AEtjO1XSvAiRsq4UDryBwobHLoNwMGu0Yjpj-TFy7-xIP7hnCOYn4pU6xx1ncKtpdj7mqW28FYcmn18I8dPpTSSXriLn2Mgs7LO48aLN19dJJ5FtzT5DjC9EYj0rQ7YG5SB7j6EvYP1-OYBfrNt9dr96qsW5rjVV3JewM1uNTu7twe82oUy9MC2pm1XcTFPyOjVS9cBsgp-iN5Xd1mPJ22Tt7vr8pFIUMyNTgWO5fjDNgNHh"/><div class="hidden xl:flex flex-col text-left"><span class="font-title-md text-title-md text-on-surface leading-tight group-hover:text-secondary transition-colors">Hon. K. Venugopal</span><span class="font-label-sm text-label-sm text-secondary uppercase">Senior Advocate</span></div></a></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<div class="max-w-7xl mx-auto px-margin py-space-xl w-full">
+<!-- Top Editorial Header & Vault Synchronization Status -->
+<header class="pb-space-xl flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm text-secondary font-label-md uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Lexora Chambers Archive • Jurisprudence Governance</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-tight">
+          Chambers &amp; User Settings
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant pt-space-xs leading-relaxed">
+          Manage your advocate profile, chambers workspace configuration, neural research preferences, and client-side encrypted vault privileges.
+        </p>
+</div>
+<!-- Vault Synchronized Indicator Pill -->
+<div class="flex items-center gap-space-sm px-space-md py-space-sm bg-surface-container rounded-lg shadow-sm shrink-0 self-start md:self-auto">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-md text-label-md tracking-wider uppercase text-on-surface-variant">
+          Vault Sync Active • AES-256
+        </span>
+</div>
+</header>
+<!-- Main Two-Column Editorial Arrangement -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT RAIL: Sticky Editorial Index & Chamber Credentials -->
+<aside class="lg:col-span-3 lg:sticky lg:top-24 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Navigation Ledger</span>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface font-title-md text-title-md hover:bg-surface-container-high transition-colors group" href="#section-profile">
+<span class="flex items-center gap-space-xs">
+<span class="font-numeral-section text-secondary text-body-sm">01</span>
+<span>Advocate Profile</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant font-title-md text-title-md hover:bg-surface-container-high hover:text-on-surface transition-colors group" href="#section-workspace">
+<span class="flex items-center gap-space-xs">
+<span class="font-numeral-section text-secondary text-body-sm">02</span>
+<span>Workspace Spec</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant font-title-md text-title-md hover:bg-surface-container-high hover:text-on-surface transition-colors group" href="#section-preferences">
+<span class="flex items-center gap-space-xs">
+<span class="font-numeral-section text-secondary text-body-sm">03</span>
+<span>Research &amp; System</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant font-title-md text-title-md hover:bg-surface-container-high hover:text-on-surface transition-colors group" href="#section-security">
+<span class="flex items-center gap-space-xs">
+<span class="font-numeral-section text-secondary text-body-sm">04</span>
+<span>Security &amp; Terminals</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant font-title-md text-title-md hover:bg-surface-container-high hover:text-on-surface transition-colors group" href="#section-governance">
+<span class="flex items-center gap-space-xs">
+<span class="font-numeral-section text-secondary text-body-sm">05</span>
+<span>Data Sovereignty</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+</nav>
+</div>
+<!-- Chambers Verified Seal / Credentials Card -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Bar Seal Authenticated</span>
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Supreme Court of India</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Designated Senior Advocate Roll</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-0.5">
+<span class="text-on-surface font-title-md">Enrolment: D/412/1982</span>
+<span class="text-label-sm uppercase tracking-wider">Chambers Roll Token: #94-SC-APX</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-snug">
+            Appellate filings cryptographically bound to Supreme Court of India registry protocol.
+          </p>
+</div>
+</aside>
+<!-- RIGHT COLUMN: Continuous Editorial Flow -->
+<main class="lg:col-span-9 flex flex-col gap-space-xl">
+<!-- SECTION 01: ADVOCATE PROFILE -->
+<section class="flex flex-col gap-space-lg scroll-mt-24" id="section-profile">
+<div class="flex flex-col gap-space-xs">
+<span class="font-numeral-section text-numeral-section text-secondary uppercase tracking-widest">01 — Advocate Profile</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Personal &amp; Bar Credentials</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Appellate identity verified with the Bar Council of Delhi and Supreme Court of India registry.</p>
+</div>
+<!-- Portrait & Action Rail -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-space-lg">
+<div class="relative shrink-0">
+<img alt="Hon. K. Venugopal, Senior Advocate" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover shadow-md ring-2 ring-secondary/40" src="https://lh3.googleusercontent.com/aida/AEtjO1XSvAiRsq4UDryBwobHLoNwMGu0Yjpj-TFy7-xIP7hnCOYn4pU6xx1ncKtpdj7mqW28FYcmn18I8dPpTSSXriLn2Mgs7LO48aLN19dJJ5FtzT5DjC9EYj0rQ7YG5SB7j6EvYP1-OYBfrNt9dr96qsW5rjVV3JewM1uNTu7twe82oUy9MC2pm1XcTFPyOjVS9cBsgp-iN5Xd1mPJ22Tt7vr8pFIUMyNTgWO5fjDNgNHh"/>
+<div class="absolute bottom-0 right-0 p-1 bg-surface rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary flex" style="font-variation-settings: 'FILL' 1;">shield_person</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm flex-1 text-center sm:text-left">
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Hon. K. Venugopal</h3>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider">Senior Advocate</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Supreme Court of India • Constitutional Bench Practice</span>
+</div>
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-space-sm pt-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors" type="button">
+                  Update Photograph
+                </button>
+<button class="px-space-md py-1.5 rounded-lg text-error hover:bg-error-container/40 font-label-md text-label-md uppercase tracking-wider transition-colors" type="button">
+                  Remove
+                </button>
+</div>
+</div>
+</div>
+<!-- Profile Input Rows -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="advocate-name">Legal Full Name</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-title-md text-title-md focus:outline-none focus:ring-1 focus:ring-secondary shadow-sm transition-all" id="advocate-name" type="text" value="Hon. K. Venugopal"/>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[18px]">badge</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="advocate-email">Chambers Primary Dispatch Email</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary shadow-sm transition-all" id="advocate-email" type="email" value="k.venugopal@venugopalchambers.law"/>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[18px]">mail</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="bar-enrolment">Bar Enrolment &amp; Designation Token</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container px-space-md py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md cursor-default select-none shadow-sm" id="bar-enrolment" readonly="" type="text" value="Bar Council of Delhi • D/412/1982 • Senior Advocate Roll #94"/>
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[18px]">verified_user</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant pt-0.5">To modify statutory Bar Council designations, submit certified Registry Form 12 to Chambers Administration.</span>
+</div>
+<div class="flex justify-end pt-space-xs">
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all shadow-sm" type="button">
+                Save Profile Modifiers
+              </button>
+</div>
+</div>
+</section>
+<!-- SECTION 02: WORKSPACE SPECIFICATION -->
+<section class="flex flex-col gap-space-lg scroll-mt-24 pt-space-md" id="section-workspace">
+<div class="flex flex-col gap-space-xs">
+<span class="font-numeral-section text-numeral-section text-secondary uppercase tracking-widest">02 — Workspace Specification</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Chambers &amp; Appellate Jurisdiction</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global environment settings governing neural search parameters and docket indexes.</p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+<!-- Workspace Title & Jurisdiction -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="ws-name">Workspace Identifier</label>
+<input class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-title-md text-title-md focus:outline-none focus:ring-1 focus:ring-secondary shadow-sm transition-all" id="ws-name" type="text" value="K. Venugopal Senior Chambers — Supreme Court Practice"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="ws-jurisdiction">Primary Jurisdictional Focus</label>
+<div class="relative flex items-center">
+<select class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-title-md text-title-md focus:outline-none focus:ring-1 focus:ring-secondary appearance-none pr-10 shadow-sm cursor-pointer" id="ws-jurisdiction">
+<option selected="">Supreme Court of India • Civil &amp; Constitutional Appellate</option>
+<option>High Court of Delhi • Original &amp; Appellate Side</option>
+<option>National Company Law Appellate Tribunal (NCLAT)</option>
+<option>Arbitration Chambers • International Commercial</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Translation Protocol & Language -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">Dual-Language Synthesis (English &amp; Hindi Diglot)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Default Court Standard: English (UK / India Court Standard). Enables simultaneous bilingual ratio summaries.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Vault Storage Tier Ledger -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">folder_special</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Chambers Enterprise Dedicated Tier</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dedicated tenant isolation • Custom neural embedder on private hardware</span>
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<span><strong>48</strong> Matters Indexed</span>
+<span>•</span>
+<span><strong>142</strong> Folios Analyzed</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-auto">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors" type="button">
+                  Expand Quota
+                </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 03: RESEARCH & SYSTEM PREFERENCES -->
+<section class="flex flex-col gap-space-lg scroll-mt-24 pt-space-md" id="section-preferences">
+<div class="flex flex-col gap-space-xs">
+<span class="font-numeral-section text-numeral-section text-secondary uppercase tracking-widest">03 — Research &amp; System Preferences</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Intelligence &amp; Reading Surface</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calibrate neural citation extractors, visual presentation modes, and registrar notifications.</p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xl">
+<!-- Theme Selection Custom Radio Pills -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Editorial Presentation Theme</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Ivory Standard -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="theme-selector" type="radio"/>
+<div class="p-space-md rounded-lg bg-surface peer-checked:bg-surface-container-high peer-checked:shadow-sm transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Editorial Ivory</span>
+<span class="w-3.5 h-3.5 rounded-full bg-secondary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standard Daylight court reading session</span>
+</div>
+</label>
+<!-- Archival Parchment -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="theme-selector" type="radio"/>
+<div class="p-space-md rounded-lg bg-surface peer-checked:bg-surface-container-high peer-checked:shadow-sm transition-all flex flex-col gap-1 opacity-80 hover:opacity-100">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Archival Parchment</span>
+<span class="w-3.5 h-3.5 rounded-full bg-tertiary-fixed-dim"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Soft stone tint for marathon brief review</span>
+</div>
+</label>
+<!-- Dark Chambers -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="theme-selector" type="radio"/>
+<div class="p-space-md rounded-lg bg-surface peer-checked:bg-surface-container-high peer-checked:shadow-sm transition-all flex flex-col gap-1 opacity-80 hover:opacity-100">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Dark Chambers</span>
+<span class="w-3.5 h-3.5 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Night session high-contrast study mode</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Search & Citation Weighting Preferences -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Precedent Synthesis Engine</span>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between p-space-md bg-surface rounded-lg">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">SCC Online &amp; AIR Parallel Concordance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automatically match citations against Supreme Court Cases and All India Reporter parallel reporters.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface rounded-lg">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Automatic Ratio Decidendi Extraction</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Isolate binding legal principles from judicial obiter dicta in appellate judgments.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface rounded-lg">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Strict Constitutional Keyword Weighting</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prioritize Article 32, Article 136, and Article 142 jurisdictional jurisprudence in search relevance ranking.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Granular Dispatch Notifications -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Court Notifications &amp; Alerts</span>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between p-space-md bg-surface rounded-lg">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Supreme Court Mention Alerts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Push notifications when listed matters reach item numbers in Court 1 through 16.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface rounded-lg">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">SCC Precedent Concordance Updates</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Notify when an active cited judgment is distinguished or doubted by a larger bench.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface rounded-lg">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Document Ingest Completion</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Digest alert upon successful OCR processing, ratio tagging, and precedent indexing of court folios.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 04: SECURITY & TERMINALS -->
+<section class="flex flex-col gap-space-lg scroll-mt-24 pt-space-md" id="section-security">
+<div class="flex flex-col gap-space-xs">
+<span class="font-numeral-section text-numeral-section text-secondary uppercase tracking-widest">04 — Encrypted Security &amp; Credentials</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Vault Keys &amp; Authorized Terminals</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Strict chambers hardware authentication and cryptographic session control.</p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+<!-- Master Key / Password Row -->
+<div class="p-space-md bg-surface rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Chambers Master Key • Passphrase</span>
+<span class="font-numeral-section text-on-surface tracking-widest text-body-md pt-0.5">••••••••••••••••</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant pt-0.5">Last rotated 24 days ago from Senior Counsel Bench Terminal.</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors shrink-0" type="button">
+                Rotate Chambers Key
+              </button>
+</div>
+<!-- Two-Factor Authentication Hardware FIDO2 -->
+<div class="p-space-md bg-surface rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">key</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Hardware FIDO2 Security Key + Authenticator</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase">Active</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">YubiKey 5C NFC bound • Biometric Chambers Passkey enabled</span>
+</div>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors shrink-0" type="button">
+                Configure Keys
+              </button>
+</div>
+<!-- Active Sessions Ledger -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Active Chambers Terminals (3)</span>
+<button class="text-secondary font-label-md text-label-md uppercase tracking-wider hover:underline" type="button">
+                  Revoke Other Terminals
+                </button>
+</div>
+<div class="space-y-space-xs">
+<!-- Terminal 1: Active Bench Terminal -->
+<div class="p-space-md bg-surface rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[22px]">desktop_windows</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Supreme Court Senior Counsel Bench Terminal 03</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active Now • Supreme Court Complex, Tilak Marg, New Delhi</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Current Session</span>
+</div>
+<!-- Terminal 2: iPad Pro -->
+<div class="p-space-md bg-surface rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">tablet_mac</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Lexora Chambers iPad Pro 13 (M4)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Logged in 2 hrs ago • Sundar Nagar Chambers, New Delhi</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error text-label-md font-label-md uppercase tracking-wider" type="button">
+                    Disconnect
+                  </button>
+</div>
+<!-- Terminal 3: MacBook Pro -->
+<div class="p-space-md bg-surface rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">laptop_mac</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">MacBook Pro 16 • M3 Max</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Michaelmas Term Session • Registered Advocate Device</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error text-label-md font-label-md uppercase tracking-wider" type="button">
+                    Disconnect
+                  </button>
+</div>
+</div>
+</div>
+<!-- Distinct Destructive Action (Sign Out of All) -->
+<div class="mt-space-md p-space-lg rounded-xl bg-error-container/20 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<span class="material-symbols-outlined text-error text-[24px]">logout</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-error">Emergency Chambers Disconnect</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instantly terminate all active bearer tokens across all devices, handhelds, and bench terminals.</span>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-error text-on-error font-label-md text-label-md uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all shadow-sm shrink-0" type="button">
+                Sign Out of All Chambers Terminals
+              </button>
+</div>
+</div>
+</section>
+<!-- SECTION 05: PRIVACY, GOVERNANCE & DATA SOVEREIGNTY -->
+<section class="flex flex-col gap-space-lg scroll-mt-24 pt-space-md" id="section-governance">
+<div class="flex flex-col gap-space-xs">
+<span class="font-numeral-section text-numeral-section text-secondary uppercase tracking-widest">05 — Privacy, Governance &amp; Data Sovereignty</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Client Privilege &amp; Model Sovereignty</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Privileged client communication guarantees, zero-knowledge storage, and statutory export standards.</p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xl">
+<!-- Client Privilege Vault Architecture Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-secondary">
+<span class="material-symbols-outlined text-[22px]">lock</span>
+<span class="font-title-md text-title-md">Chambers Zero-Knowledge Vault (Client-Side AES-256-GCM)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Appellate briefs, client affidavits, and confidential draft petitions undergo client-side cryptographic salting before neural indexing. Lexora systems never store unencrypted plaintext, and chambers materials are strictly isolated from any communal training pipelines.
+              </p>
+<div class="flex items-center gap-space-xs text-on-surface font-label-sm text-label-sm uppercase tracking-widest pt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Section 126, Indian Evidence Act • Privileged Communications Compliant</span>
+</div>
+</div>
+<!-- Model Training Opt-Out Status -->
+<div class="p-space-md bg-surface rounded-lg flex items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Strict Zero-Telemetry • Model Training Permanently Prohibited</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase">Verified Active</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Your chambers research queries, citation patterns, and notes are never ingested into foundation model training.</span>
+</div>
+<label class="relative inline-flex items-center cursor-not-allowed opacity-80 shrink-0">
+<input checked="" class="sr-only peer" disabled="" type="checkbox"/>
+<div class="w-11 h-6 bg-secondary peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5"></div>
+</label>
+</div>
+<!-- Data Retention Protocol Row -->
+<div class="p-space-md bg-surface rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Data Retention &amp; Automatic Purge Protocol</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auto-purge temporary analysis folios and intermediate draft embeddings after 30 days of court final decree.</span>
+</div>
+<select class="bg-surface-container-high px-space-md py-2 rounded-lg text-on-surface font-title-md text-title-md focus:outline-none focus:ring-1 focus:ring-secondary shrink-0 cursor-pointer">
+<option selected="">30 Days Post-Decree</option>
+<option>60 Days Post-Decree</option>
+<option>Manual Purge Only (Indefinite)</option>
+</select>
+</div>
+<!-- Data Export Action -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Export Complete Chambers Data Archive</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Generate a signed JSON &amp; Encrypted PDF bundle containing all Indexed Precedents, Folio Notes, and Concordance Trees.</span>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-space-xs transition-colors shrink-0 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Chambers Archive</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Final Bottom Footer Actions Bar -->
+<div class="py-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">security</span>
+<span>All modifications cryptographically signed with Chambers Token #94-SC-APX</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors" type="button">
+              Discard Changes
+            </button>
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all shadow-sm" type="button">
+              Commit Workspace Updates
+            </button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin py-space-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-numeral-section text-numeral-section text-secondary tracking-widest uppercase">Lexora Jurisprudence Engine • Supreme Court Dispatch</span><p class="font-body-sm text-body-sm text-on-surface-variant">Supreme Court Appellate Synthesis &amp; Constitutional Bench Precedents Archival Workspace.</p></div><div class="flex flex-wrap gap-space-lg text-on-surface-variant font-label-md text-label-md uppercase tracking-wider"><a class="hover:text-on-surface transition-colors" href="#">Court Protocol</a><a class="hover:text-on-surface transition-colors" href="#">Citation Library</a><a class="hover:text-on-surface transition-colors" href="#">Chambers Security</a><a class="hover:text-on-surface transition-colors" href="#">Statutory Index</a></div></div><div class="max-w-7xl mx-auto px-margin pb-space-lg pt-space-xs flex flex-col sm:flex-row justify-between items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><span>© 2024 Lexora Appellate Systems Ltd. All Chambers Privileges Reserved.</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">New Delhi • Supreme Court Registry Compliant</span></div></footer></body></html>

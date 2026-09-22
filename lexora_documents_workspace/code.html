@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>LEXORA - Legal Workspace</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed": "#e6e1df",
+          "on-surface-variant": "#4b4640",
+          "surface-container-low": "#f7f3ec",
+          "on-primary-fixed-variant": "#484645",
+          "tertiary": "#000000",
+          "secondary": "#974813",
+          "outline-variant": "#cdc5bd",
+          "primary-fixed-dim": "#cac6c3",
+          "surface-bright": "#fdf9f2",
+          "inverse-primary": "#cac6c3",
+          "secondary-fixed": "#ffdbca",
+          "on-primary-fixed": "#1d1b1a",
+          "primary": "#000000",
+          "on-secondary-fixed-variant": "#773200",
+          "on-primary": "#ffffff",
+          "surface-container-high": "#ece8e1",
+          "on-background": "#1c1c18",
+          "on-secondary": "#ffffff",
+          "error": "#ba1a1a",
+          "surface-tint": "#605e5c",
+          "surface-container-highest": "#e6e2db",
+          "tertiary-fixed": "#ffdcbe",
+          "on-tertiary-container": "#a77b51",
+          "on-tertiary-fixed-variant": "#623f1b",
+          "on-error-container": "#93000a",
+          "on-surface": "#1c1c18",
+          "surface-variant": "#e6e2db",
+          "on-tertiary-fixed": "#2d1600",
+          "inverse-surface": "#31302c",
+          "on-error": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#fdf9f2",
+          "tertiary-fixed-dim": "#f0bd8e",
+          "on-primary-container": "#868381",
+          "tertiary-container": "#2d1600",
+          "background": "#fdf9f2",
+          "error-container": "#ffdad6",
+          "outline": "#7c766f",
+          "primary-container": "#1d1b1a",
+          "on-secondary-fixed": "#331100",
+          "on-secondary-container": "#723000",
+          "inverse-on-surface": "#f4f0e9",
+          "secondary-fixed-dim": "#ffb68f",
+          "surface-dim": "#dddad3",
+          "surface-container": "#f1ede6",
+          "secondary-container": "#fd975d",
+          "on-tertiary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "space-md": "0.75rem",
+          "margin": "1.25rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2rem",
+          "space-lg": "1.25rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Manrope"
+          ],
+          "title-lg": [
+            "Manrope"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Manrope"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Manrope"
+          ],
+          "body-sm": [
+            "Manrope"
+          ],
+          "body-md": [
+            "Manrope"
+          ],
+          "numeral-section": [
+            "Playfair Display"
+          ],
+          "title-md": [
+            "Manrope"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "display-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-lg": [
+            "16px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.1em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "numeral-section": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #11100f
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W6yy4-64OcuJLjEZZikcPDUx5pZeInWTA1aQWI_kNAFmo1vSDpE5_0ftr15uCIawaftfylf3DpsRJ5SLzjzjqotvfdtoOgb_pDqMy_GMdqd_U-kfMsS5Z5ReeZ3K1SzpqOlJYRT9gbNv1-3PsDCi5DkU8CFT6qW_nEjQOU1ExIhgpYCtOSANG17DSpDLt0mKr9Tll4Kiad4R8gkptNiqiCY-kwA7Vl8AHPQLlMUtI"/><span class="font-headline-sm text-headline-sm tracking-[0.18em] text-on-surface uppercase">LEXORA</span></div><div class="h-4 w-px bg-outline-variant/40 hidden sm:block"></div><nav class="flex items-center gap-space-lg relative h-16" data-active-classes="text-on-surface font-title-md after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-secondary"><a class="relative flex items-center h-full text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="relative flex items-center h-full text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors" data-path="documents" href="#">Documents</a><a class="relative flex items-center h-full text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors" data-path="summaries" href="#">Summaries</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low px-space-md py-space-xs rounded text-on-surface-variant text-body-sm font-body-sm gap-space-sm"><span class="material-symbols-outlined text-[18px] text-outline">search</span><span class="text-outline italic">Search briefs, statutes, authorities...</span><span class="font-label-sm text-label-sm uppercase bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant">⌘K</span></div><div class="relative flex items-center justify-center w-9 h-9 rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-1.5 h-1.5 rounded-full bg-secondary"></span></div><div class="h-4 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XSvAiRsq4UDryBwobHLoNwMGu0Yjpj-TFy7-xIP7hnCOYn4pU6xx1ncKtpdj7mqW28FYcmn18I8dPpTSSXriLn2Mgs7LO48aLN19dJJ5FtzT5DjC9EYj0rQ7YG5SB7j6EvYP1-OYBfrNt9dr96qsW5rjVV3JewM1uNTu7twe82oUy9MC2pm1XcTFPyOjVS9cBsgp-iN5Xd1mPJ22Tt7vr8pFIUMyNTgWO5fjDNgNHh"/><div class="hidden lg:flex flex-col text-left"><span class="font-title-md text-title-md text-on-surface leading-none">Adv. V. Nariman</span><span class="font-label-sm text-label-sm uppercase text-secondary tracking-wider mt-0.5">Senior Counsel</span></div></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Archival Context Atmospheric Underlay -->
+<div class="w-full px-margin py-space-xl max-w-[1560px] mx-auto flex flex-col gap-space-xl">
+<!-- 1. PAGE HEADER (Editorial Folio Header) -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg pb-space-lg border-b border-on-surface/10">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm tracking-[0.2em] text-secondary uppercase font-semibold">Chambers Registry · Vol. VIII</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Active Docket 2026/27</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight font-headline-lg">DOCUMENTS</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl italic">
+          Archival custody, forensic transcription, and statutory intelligence for chambers matters.
+        </p>
+</div>
+<!-- Action Button Group -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="px-space-md py-2.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider flex items-center gap-space-xs hover:bg-surface-container-highest transition-colors shadow-sm" id="quick-digest-toggle">
+<span class="material-symbols-outlined text-[16px] text-secondary">history_edu</span>
+<span>Zero-State Guide</span>
+</button>
+<button class="px-space-lg py-2.5 rounded bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider flex items-center gap-space-xs hover:opacity-95 active:scale-95 transition-all shadow-md">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Upload Document</span>
+</button>
+</div>
+</section>
+<!-- 2. SEARCH & EDITORIAL FILTERS (Architectural Refinement) -->
+<section class="flex flex-col gap-space-md">
+<!-- Search Input Container -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-space-md flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">manage_search</span>
+</div>
+<input class="w-full pl-11 pr-32 py-3 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded shadow-sm focus:outline-none focus:ring-1 focus:ring-secondary/40 transition-all placeholder:italic" placeholder="Search briefs, statutory citations (e.g. Art. 136, BNS § 482), parties or matter folios..." type="text"/>
+<div class="absolute inset-y-0 right-0 pr-space-md flex items-center gap-space-xs pointer-events-none">
+<span class="font-label-sm text-label-sm text-outline bg-surface-container-high px-2 py-0.5 rounded tracking-wider uppercase">Alt + F</span>
+</div>
+</div>
+<!-- Filters & Taxonomies Row -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<!-- Status Filter Tabs -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 lg:pb-0 scrollbar-none" id="status-filter-pills">
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-primary-container text-on-primary transition-all">All (48)</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all">Recent</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Processed (41)</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span>Processing (4)</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Failed (3)</span>
+</button>
+</div>
+<!-- Jurisdictional & Metadata Dropdowns -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="relative group">
+<button class="px-space-md py-1.5 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md tracking-wider uppercase flex items-center gap-space-xs shadow-sm hover:bg-surface-container">
+<span>Jurisdiction: All Courts</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<div class="relative group">
+<button class="px-space-md py-1.5 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md tracking-wider uppercase flex items-center gap-space-xs shadow-sm hover:bg-surface-container">
+<span>Matter Type</span>
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+</button>
+</div>
+<div class="relative group">
+<button class="px-space-md py-1.5 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md tracking-wider uppercase flex items-center gap-space-xs shadow-sm hover:bg-surface-container">
+<span>Date: Michaelmas Term '26</span>
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 3 & 4. TWO-COLUMN ARCHIVE WORKSPACE -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT/CENTER COLUMN: Archive Register (approx 68% -> 8 columns) -->
+<section class="lg:col-span-8 flex flex-col bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden">
+<!-- Register Top Bar / Metrics -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium">Chambers Folio Index</span>
+<span class="font-numeral-section text-numeral-section text-outline">6 MATTERS SHOWN</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase tracking-widest">
+<span>Verified Vault Integrity</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+</div>
+</div>
+<!-- Table Master Layout -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/50 text-outline font-label-sm text-label-sm uppercase tracking-[0.14em]">
+<th class="py-space-md pl-space-lg pr-space-sm font-semibold">Folio &amp; Document Identity</th>
+<th class="py-space-md px-space-sm font-semibold hidden md:table-cell">Forum / Type</th>
+<th class="py-space-md px-space-sm font-semibold hidden sm:table-cell">Logged</th>
+<th class="py-space-md px-space-sm font-semibold">Status</th>
+<th class="py-space-md px-space-sm font-semibold text-right hidden sm:table-cell">Folios</th>
+<th class="py-space-md pr-space-lg pl-space-sm text-right font-semibold">Audit</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-on-surface/5" id="documents-table-body">
+<!-- Row 1: Selected / Focus State -->
+<tr class="group bg-surface-container-high/40 hover:bg-surface-container-high/60 cursor-pointer transition-colors" onclick="selectDocument('doc1')">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate group-hover:text-secondary transition-colors">
+                          SLP_Civil_Draft_Union_Minerals.pdf
+                        </span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-1.5 py-0.2 rounded font-label-sm text-label-sm uppercase">Active Inspect</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Union of India vs. K.S. Minerals Corporation Ltd.</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm hidden md:table-cell">
+<span class="font-label-sm text-label-sm text-on-surface bg-surface-container px-2 py-1 rounded tracking-wide uppercase">Special Leave Petition</span>
+</td>
+<td class="py-space-md px-space-sm hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  18 Sep 2026
+                </td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-wider uppercase font-semibold">Processed</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-right hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  142 pp
+                </td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-secondary rounded hover:bg-surface-container" title="Read Folio">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 hover:text-secondary rounded hover:bg-surface-container" title="Extract Reasoning">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="group hover:bg-surface-container/50 cursor-pointer transition-colors" onclick="selectDocument('doc2')">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container text-outline shrink-0 mt-0.5 group-hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate group-hover:text-secondary transition-colors">
+                        Arbitral_Award_NHAI_Consortium.pdf
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">In Re: NHAI Golden Corridor Arbitral Tribunal (Retd. J. Chandrachud)</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm hidden md:table-cell">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded tracking-wide uppercase">Arbitral Award</span>
+</td>
+<td class="py-space-md px-space-sm hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  17 Sep 2026
+                </td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-wider uppercase font-semibold">Processed</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-right hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  120 pp
+                </td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-secondary rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 hover:text-secondary rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Processing -->
+<tr class="group hover:bg-surface-container/50 cursor-pointer transition-colors" onclick="selectDocument('doc3')">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container text-secondary shrink-0 mt-0.5 animate-pulse">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate group-hover:text-secondary transition-colors">
+                        Bail_App_BNS_Sec482_Singhal.pdf
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Singhal &amp; Ors. vs. State of Maharashtra (BNS Codification)</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm hidden md:table-cell">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded tracking-wide uppercase">Criminal Appeal</span>
+</td>
+<td class="py-space-md px-space-sm hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  16 Sep 2026
+                </td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase font-semibold">OCR Analysis</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-right hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  32 pp
+                </td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-secondary rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="group hover:bg-surface-container/50 cursor-pointer transition-colors" onclick="selectDocument('doc4')">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container text-outline shrink-0 mt-0.5 group-hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate group-hover:text-secondary transition-colors">
+                        Tata_Sons_vs_Union_of_India_Pleadings.pdf
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Five-Judge Constitution Bench on Cross-Border Data Sovereignty</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm hidden md:table-cell">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded tracking-wide uppercase">Constitution Bench</span>
+</td>
+<td class="py-space-md px-space-sm hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  14 Sep 2026
+                </td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-wider uppercase font-semibold">Processed</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-right hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  48 pp
+                </td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-secondary rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 hover:text-secondary rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Failed State with Retry -->
+<tr class="group hover:bg-surface-container/50 cursor-pointer transition-colors bg-error-container/10" onclick="selectDocument('doc5')">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded bg-error-container text-on-error-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate group-hover:text-error transition-colors">
+                          Delhi_Airport_Metro_Express_Rejoinder.pdf
+                        </span>
+<span class="bg-error-container text-on-error-container px-1.5 py-0.2 rounded font-label-sm text-label-sm uppercase">OCR Corrupt</span>
+</div>
+<span class="font-body-sm text-body-sm text-error/80 truncate">Scanned carbon resolution below 180 DPI at folios 44-59</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm hidden md:table-cell">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded tracking-wide uppercase">Commercial SLP</span>
+</td>
+<td class="py-space-md px-space-sm hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  11 Sep 2026
+                </td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-error tracking-wider uppercase font-semibold">Failed</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-right hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  86 pp
+                </td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span class="hidden sm:inline">Retry</span>
+</button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="group hover:bg-surface-container/50 cursor-pointer transition-colors" onclick="selectDocument('doc6')">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container text-outline shrink-0 mt-0.5 group-hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate group-hover:text-secondary transition-colors">
+                        National_Medical_Commission_Writ.pdf
+                      </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Challenging Qualifying Percentiles under Article 32</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm hidden md:table-cell">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded tracking-wide uppercase">Writ Petition</span>
+</td>
+<td class="py-space-md px-space-sm hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  08 Sep 2026
+                </td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-wider uppercase font-semibold">Processed</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-right hidden sm:table-cell font-numeral-section text-numeral-section text-on-surface-variant">
+                  64 pp
+                </td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 hover:text-secondary rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 hover:text-secondary rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Archival Index Footer / Ledger Pagination -->
+<div class="px-space-lg py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-outline font-label-sm text-label-sm uppercase">
+<div class="flex items-center gap-space-sm">
+<span>Viewing 1 – 6 of 48 Documents</span>
+<span class="text-outline/40">|</span>
+<span>Archive Index Checksum: #8A4F-2026</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded hover:bg-surface-container text-on-surface-variant disabled:opacity-40" disabled="">Previous</button>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-bold">1</span>
+<button class="px-2.5 py-1 rounded hover:bg-surface-container text-on-surface-variant">2</button>
+<button class="px-2.5 py-1 rounded hover:bg-surface-container text-on-surface-variant">3</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container text-on-surface-variant">Next</button>
+</div>
+</div>
+</section>
+<!-- RIGHT COLUMN: Pinned Editorial Detail Panel (approx 32% -> 4 columns) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md sticky top-20">
+<!-- Document Detail Folio Card -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Editorial Top Index Marker -->
+<div class="flex items-center justify-between pb-space-sm border-b border-on-surface/10">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded text-secondary font-bold uppercase tracking-widest">
+                FOLIO SC-2026/0419
+              </span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Supreme Court of India</span>
+</div>
+<button class="text-outline hover:text-on-surface transition-colors p-1" title="Dismiss inspection">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Document Title & Header Details -->
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-serif font-medium leading-snug">
+              Union of India vs. K.S. Minerals Ltd.
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              Special Leave Petition (Civil) under Article 136 challenging retrospective extraction royalties under the MMDR Act.
+            </p>
+</div>
+<!-- Physical Archival Preview Sheet (Visual Richness with Wax Seal Motif) -->
+<div class="relative w-full h-48 bg-surface-container-low rounded p-space-md overflow-hidden shadow-inner flex flex-col justify-between">
+<!-- Background Archival Tone & Seal -->
+<div class="absolute -right-4 -bottom-6 w-32 h-32 rounded-full bg-secondary/5 flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-[88px] text-secondary/20">balance</span>
+</div>
+<!-- Page Excerpt Header -->
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm uppercase tracking-wider z-10">
+<span class="flex items-center gap-1 font-semibold text-secondary">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+                Verified Archival Copy
+              </span>
+<span>Page 1 / 142</span>
+</div>
+<!-- Mock Typeset Text of Petition -->
+<div class="flex flex-col gap-1.5 z-10 max-w-[85%] opacity-90">
+<span class="font-headline-sm text-[12px] font-serif uppercase tracking-widest text-on-surface">IN THE SUPREME COURT OF INDIA</span>
+<span class="font-body-sm text-[11px] leading-tight text-on-surface-variant font-mono">CIVIL APPELLATE JURISDICTION</span>
+<p class="font-body-sm text-[11px] leading-relaxed text-on-surface-variant line-clamp-3 italic">
+                "MAY IT PLEASE YOUR LORDSHIPS: The Petitioner above-named respectfully submits that the impugned judgment of the Hon'ble High Court dated 14.07.2026 erroneously conflates royalty with tax, contravening the Nine-Judge Bench ruling in Mineral Area Development..."
+              </p>
+</div>
+<!-- Mini Citation Health Bar -->
+<div class="w-full flex flex-col gap-1 z-10 pt-2 border-t border-on-surface/5">
+<div class="flex justify-between font-label-sm text-[9px] uppercase tracking-wider text-outline">
+<span>Citation Integrity: High</span>
+<span class="text-secondary font-bold">98.4% Concurrence</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary" style="width: 78%"></div>
+<div class="h-full bg-secondary-container" style="width: 14%"></div>
+<div class="h-full bg-error" style="width: 8%"></div>
+</div>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low/60 p-space-sm rounded">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-outline">Format &amp; Size</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">PDF · 34.8 MB</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-outline">Ingested On</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">18 Sep '26, 10:42 AM</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-outline">Security Level</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">lock</span>
+                256-bit Chambers
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-outline">Folio Extent</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">142 Scanned Pages</span>
+</div>
+</div>
+<!-- AI Intelligence Highlights -->
+<div class="flex flex-col gap-2 p-space-sm rounded bg-surface-container">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Archival Insights Extracted</span>
+</div>
+<ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-1.5">
+<span class="text-secondary font-bold mt-0.5">•</span>
+<span><strong>3 Crucial Contradictions Flagged</strong> regarding tax periods 2019-2024.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="text-secondary font-bold mt-0.5">•</span>
+<span><strong>Article 136 Discretionary Precedents</strong> aligned with 9 recent constitution judgments.</span>
+</li>
+</ul>
+</div>
+<!-- Action Buttons / CTA Suite -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-2.5 rounded bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-95 active:scale-[0.99] transition-all shadow-md">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Generate Summary</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>View Original</span>
+</button>
+<button class="p-2 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors shadow-sm" title="Download Official Chambers Folio">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Archival Repository Status Badge (Bespoke Legal Tactility) -->
+<div class="p-space-md rounded bg-surface-container-low flex items-center justify-between text-outline font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">token</span>
+<span class="uppercase tracking-wider">Supreme Court AI Digest Active</span>
+</div>
+<span class="text-secondary font-semibold font-mono text-[11px]">v4.8.2-IN</span>
+</div>
+</aside>
+</div>
+<!-- 5. ELEGANT EMPTY STATE CALLOUT (Toggleable Zero-State Demonstration) -->
+<section class="hidden flex-col items-center justify-center text-center p-space-xl bg-surface-container-lowest rounded-lg shadow-sm border border-secondary/20 transition-all" id="zero-state-card">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[32px]">folder_special</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] font-semibold mb-1">CHAMBERS VAULT ZERO-STATE</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-serif mb-space-xs">Your legal workspace is empty.</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">
+        Upload your first brief, SLP petition, or statutory compilation to begin building your firm's private citation repository.
+      </p>
+<button class="px-space-xl py-3 rounded bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider flex items-center gap-2 hover:opacity-95 shadow-md active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>+ Upload Document</span>
+</button>
+</section>
+</div>
+<!-- Interactive script for demo interactions without reload -->
+<script>
+    // Simple filter pill toggle
+    const filterPills = document.querySelectorAll('#status-filter-pills button');
+    filterPills.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterPills.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      });
+    });
+
+    // Zero-state preview card toggle
+    const toggleBtn = document.getElementById('quick-digest-toggle');
+    const zeroStateCard = document.getElementById('zero-state-card');
+    if (toggleBtn && zeroStateCard) {
+      toggleBtn.addEventListener('click', () => {
+        if (zeroStateCard.classList.contains('hidden')) {
+          zeroStateCard.classList.remove('hidden');
+          zeroStateCard.classList.add('flex');
+          toggleBtn.querySelector('span:last-child').textContent = 'Hide Zero-State';
+          zeroStateCard.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          zeroStateCard.classList.add('hidden');
+          zeroStateCard.classList.remove('flex');
+          toggleBtn.querySelector('span:last-child').textContent = 'Zero-State Guide';
+        }
+      });
+    }
+
+    // Row selection visual feedback
+    function selectDocument(docId) {
+      const rows = document.querySelectorAll('#documents-table-body tr');
+      rows.forEach(r => r.classList.remove('bg-surface-container-high/40'));
+      event.currentTarget.classList.add('bg-surface-container-high/40');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-lg"><div class="w-full px-margin flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm uppercase tracking-widest text-on-surface">LEXORA</span><span class="text-outline">|</span><span>Chambers &amp; Enterprise Appellate Intelligence</span></div><div class="flex items-center gap-space-lg text-outline font-label-sm text-label-sm uppercase tracking-wider"><a class="hover:text-on-surface transition-colors" href="#">Court Repositories</a><a class="hover:text-on-surface transition-colors" href="#">Citation Graph</a><a class="hover:text-on-surface transition-colors" href="#">Chambers Protocol</a></div></div></footer></body></html>

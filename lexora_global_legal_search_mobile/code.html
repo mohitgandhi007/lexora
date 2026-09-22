@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'inverse-surface': '#31302c', 'primary-fixed': '#e6e1df', 'surface-variant': '#e6e2db', 'on-secondary': '#ffffff', 'on-background': '#1c1c18', 'on-error': '#ffffff', 'secondary': '#974813', 'surface-container-highest': '#e6e2db', 'tertiary-fixed-dim': '#f0bd8e', 'secondary-fixed': '#ffdbca', 'secondary-fixed-dim': '#ffb68f', 'on-secondary-fixed': '#331100', 'on-surface-variant': '#4b4640', 'on-tertiary-fixed-variant': '#623f1b', 'tertiary': '#000000', 'on-tertiary': '#ffffff', 'on-tertiary-fixed': '#2d1600', 'surface': '#fdf9f2', 'on-tertiary-container': '#a77b51', 'surface-bright': '#fdf9f2', 'primary-fixed-dim': '#cac6c3', 'error': '#ba1a1a', 'outline': '#7c766f', 'surface-container': '#f1ede6', 'background': '#fdf9f2', 'surface-container-lowest': '#ffffff', 'surface-tint': '#605e5c', 'tertiary-container': '#2d1600', 'error-container': '#ffdad6', 'secondary-container': '#fd975d', 'inverse-on-surface': '#f4f0e9', 'on-primary-container': '#868381', 'tertiary-fixed': '#ffdcbe', 'on-secondary-container': '#723000', 'surface-container-low': '#f7f3ec', 'on-primary-fixed-variant': '#484645', 'surface-container-high': '#ece8e1', 'primary-container': '#1d1b1a', 'inverse-primary': '#cac6c3', 'on-primary': '#ffffff', 'outline-variant': '#cdc5bd', 'on-error-container': '#93000a', 'primary': '#000000', 'on-primary-fixed': '#1d1b1a', 'on-surface': '#1c1c18', 'on-secondary-fixed-variant': '#773200', 'surface-dim': '#dddad3' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-xs': '0.25rem', 'space-md': '0.75rem', 'space-sm': '0.5rem', 'space-lg': '1.25rem', 'space-xl': '2rem', 'gutter': '1rem', 'margin': '1.25rem' }, fontFamily: { 'title-md': ['Manrope'], 'body-sm': ['Manrope'], 'display-lg-mobile': ['Playfair Display'], 'headline-lg': ['Playfair Display'], 'body-lg': ['Manrope'], 'body-md': ['Manrope'], 'label-sm': ['Manrope'], 'numeral-section': ['Playfair Display'], 'headline-md': ['Playfair Display'], 'display-lg': ['Playfair Display'], 'title-lg': ['Manrope'], 'headline-sm': ['Playfair Display'], 'label-md': ['Manrope'] }, fontSize: { 'title-md': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'body-sm': ['12px', { lineHeight: '18px', fontWeight: '400' }], 'display-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '600' }], 'headline-lg': ['24px', { lineHeight: '32px', letterSpacing: '-0.01em', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '26px', fontWeight: '400' }], 'body-md': ['14px', { lineHeight: '22px', fontWeight: '400' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.1em', fontWeight: '700' }], 'numeral-section': ['12px', { lineHeight: '16px', letterSpacing: '0.05em', fontWeight: '400' }], 'headline-md': ['20px', { lineHeight: '28px', fontWeight: '500' }], 'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.02em', fontWeight: '600' }], 'title-lg': ['16px', { lineHeight: '22px', fontWeight: '600' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '500' }], 'label-md': ['11px', { lineHeight: '16px', letterSpacing: '0.08em', fontWeight: '700' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Navigate Back" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-secondary active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #11100f
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1W6yy4-64OcuJLjEZZikcPDUx5pZeInWTA1aQWI_kNAFmo1vSDpE5_0ftr15uCIawaftfylf3DpsRJ5SLzjzjqotvfdtoOgb_pDqMy_GMdqd_U-kfMsS5Z5ReeZ3K1SzpqOlJYRT9gbNv1-3PsDCi5DkU8CFT6qW_nEjQOU1ExIhgpYCtOSANG17DSpDLt0mKr9Tll4Kiad4R8gkptNiqiCY-kwA7Vl8AHPQLlMUtI"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Lexora Supreme</span><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Search Knowledge</h1></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Quick Search" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-secondary active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Court Notifications" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-secondary relative active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-1.5 h-1.5 bg-secondary rounded-full"></span></button><button aria-label="Senior Advocate Profile" class="w-11 h-11 flex items-center justify-center p-0.5 active:scale-95 transition-transform"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XSvAiRsq4UDryBwobHLoNwMGu0Yjpj-TFy7-xIP7hnCOYn4pU6xx1ncKtpdj7mqW28FYcmn18I8dPpTSSXriLn2Mgs7LO48aLN19dJJ5FtzT5DjC9EYj0rQ7YG5SB7j6EvYP1-OYBfrNt9dr96qsW5rjVV3JewM1uNTu7twe82oUy9MC2pm1XcTFPyOjVS9cBsgp-iN5Xd1mPJ22Tt7vr8pFIUMyNTgWO5fjDNgNHh"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full text-on-surface">
+<!-- TOP HEADER & DOCKET IDENTITY -->
+<section class="px-margin pt-2 pb-4 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Lexora Chambers Engine • V4.2 Index</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+<span class="font-label-sm text-[9px] uppercase tracking-widest font-bold">Encrypted Vault</span>
+</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1 leading-tight font-serif">
+      Search Your Legal Knowledge
+    </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Authoritative intelligence indexing across 48 ingested matters, 142 folios, and Supreme Court precedents.
+    </p>
+</section>
+<!-- SEARCH CONSOLE -->
+<section class="px-margin pb-3 flex flex-col gap-2">
+<div class="relative flex items-center bg-surface-container-lowest rounded-xl shadow-sm p-1.5 gap-2">
+<div class="w-9 h-9 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">manage_search</span>
+</div>
+<input class="w-full bg-transparent text-on-surface font-title-md text-title-md focus:outline-none placeholder:italic placeholder:text-outline" id="search-input" placeholder="Search citations, acts, benches or parties..." type="text" value="Section 34(2A) patent illegality arbitral award"/>
+<button aria-label="Clear query" class="w-8 h-8 flex items-center justify-center rounded-lg text-outline hover:text-on-surface transition-colors flex-shrink-0" id="clear-search-btn">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+<button aria-label="Run search" class="bg-primary text-on-primary w-9 h-9 flex items-center justify-center rounded-lg active:scale-95 transition-transform flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Telemetry Strip -->
+<div class="flex items-center justify-between px-1 text-on-surface-variant font-label-sm text-[10px]">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[13px] text-secondary">bolt</span>
+<span class="truncate">24 results in 4 groups (14ms)</span>
+</div>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+<span class="text-on-surface-variant">SCC Synchronized</span>
+</div>
+</div>
+</section>
+<!-- HORIZONTAL FILTER BAR -->
+<section class="w-full overflow-x-auto px-margin pb-3 pt-1 flex items-center gap-2 no-scrollbar">
+<button class="flex items-center gap-1 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface whitespace-nowrap active:scale-95 transition-transform">
+<span>Doc Type: All (48)</span>
+<span class="material-symbols-outlined text-[14px] text-outline">expand_more</span>
+</button>
+<button class="flex items-center gap-1 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface whitespace-nowrap active:scale-95 transition-transform">
+<span>Matter: SLP 41920/24</span>
+<span class="material-symbols-outlined text-[14px] text-outline">expand_more</span>
+</button>
+<button class="flex items-center gap-1 bg-secondary-fixed text-on-secondary-fixed px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md whitespace-nowrap">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Sec. 34(2A)</span>
+</button>
+<button class="flex items-center gap-1 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface whitespace-nowrap active:scale-95 transition-transform">
+<span>Supreme Court</span>
+</button>
+<button class="flex items-center gap-1 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm font-label-md text-label-md text-on-surface whitespace-nowrap active:scale-95 transition-transform">
+<span>Union of India</span>
+</button>
+<button class="text-secondary hover:text-on-secondary-container px-2 py-1 font-label-md text-label-md underline whitespace-nowrap">
+      Reset
+    </button>
+</section>
+<!-- CATEGORY SEGMENTED TABS & SORT -->
+<section class="px-margin pb-3">
+<div class="bg-surface-container-high p-1 rounded-xl flex items-center justify-between text-center font-title-md text-[12px]">
+<button class="flex-1 py-1.5 bg-surface-container-lowest text-on-surface rounded-lg shadow-sm font-semibold transition-all">
+        All <span class="font-normal opacity-70">24</span>
+</button>
+<button class="flex-1 py-1.5 text-on-surface-variant hover:text-on-surface transition-all">
+        Docs <span class="font-normal opacity-70">8</span>
+</button>
+<button class="flex-1 py-1.5 text-on-surface-variant hover:text-on-surface transition-all">
+        Cases <span class="font-normal opacity-70">6</span>
+</button>
+<button class="flex-1 py-1.5 text-on-surface-variant hover:text-on-surface transition-all">
+        Acts <span class="font-normal opacity-70">5</span>
+</button>
+<button class="flex-1 py-1.5 text-on-surface-variant hover:text-on-surface transition-all">
+        Parties <span class="font-normal opacity-70">5</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-2 px-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="italic">Ranked by Relevance &amp; Concordance</span>
+<span class="flex items-center gap-0.5 text-secondary font-semibold">
+        Relevance Score <span class="material-symbols-outlined text-[13px]">swap_vert</span>
+</span>
+</div>
+</section>
+<!-- CHAMBERS RESEARCH DOSSIER SUMMARY COMPACT WIDGET -->
+<section class="px-margin mb-4">
+<div class="bg-surface-container-low rounded-xl p-3.5 shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">menu_book</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Chambers Research Dossier</span>
+</div>
+<span class="bg-surface-container-highest text-secondary text-[10px] font-bold px-2 py-0.5 rounded tracking-widest uppercase">Live Sync</span>
+</div>
+<div class="text-body-sm text-[13px] text-on-surface leading-tight font-medium">
+        Target: <span class="text-secondary">Arbitral Patent Illegality • Section 34(2A)</span>
+</div>
+<!-- Health split bar -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-[10px] text-on-surface-variant">
+<span>98.4% SCC Verified Precedent Weight</span>
+<span class="font-semibold text-on-surface">78% Followed • 16% Dist. • 6% Overruled</span>
+</div>
+<div class="w-full h-1.5 rounded-full flex overflow-hidden bg-surface-container-highest">
+<div class="bg-secondary-container h-full" style="width: 78%;"></div>
+<div class="bg-outline-variant h-full" style="width: 16%;"></div>
+<div class="bg-error h-full" style="width: 6%;"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="bg-secondary text-on-secondary text-label-md font-label-md py-2 px-2 rounded-lg flex items-center justify-center gap-1 active:scale-95 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[15px]">picture_as_pdf</span>
+<span class="truncate">Export Digest [PDF]</span>
+</button>
+<button class="bg-surface-container-lowest text-on-surface text-label-md font-label-md py-2 px-2 rounded-lg flex items-center justify-center gap-1 active:scale-95 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[15px]">bookmark_add</span>
+<span class="truncate">Save to Binder</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SEARCH RESULTS STREAM -->
+<div class="flex flex-col gap-space-lg px-margin pb-6" id="results-stream">
+<!-- GROUP 01: FOLIOS & DOCUMENTS -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-numeral-section text-secondary font-bold">01 /</span>
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Folio &amp; Drafting Documents</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">8 Hits</span>
+</div>
+<!-- Result Card 1 -->
+<article class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">description</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold truncate">SLP_Civil_Draft_Union_Minerals_2026.pdf</h4>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] px-1.5 py-0.5 rounded font-bold uppercase flex-shrink-0 tracking-wide">✦ 99.1% Concordance</span>
+</div>
+<div class="flex flex-wrap gap-1 text-[10px] font-label-sm">
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium">SPECIAL LEAVE PETITION</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium">SUPREME COURT</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium">18 SEP 2026</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium">142 FOLIOS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed bg-surface-container-low p-2 rounded-lg">
+          "...the learned Sole Arbitrator committed fatal 
+          <mark class="bg-[#f0e3ce] text-[#11100f] px-1 py-0.5 rounded font-medium">Section 34(2A) patent illegality</mark> 
+          appearing on the face of the 
+          <mark class="bg-[#f0e3ce] text-[#11100f] px-1 py-0.5 rounded font-medium">arbitral award</mark> 
+          by unilaterally rewriting commercial formula Clause 14.2 without bilateral consent..."
+        </p>
+<div class="flex items-center justify-between pt-1">
+<a class="text-secondary font-title-md text-title-md font-semibold flex items-center gap-1 hover:underline" href="#">
+            View Folio 14 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button aria-label="Bookmark folio" class="w-8 h-8 flex items-center justify-center hover:text-secondary rounded">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+<button aria-label="Download folio PDF" class="w-8 h-8 flex items-center justify-center hover:text-secondary rounded">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Result Card 2 -->
+<article class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">article</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold truncate">Arbitral_Award_NHAI_Consortium_Final.pdf</h4>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 text-[10px] font-label-sm">
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium">ARBITRAL AWARD</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium">TRIBUNAL</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium">17 MAR 2023</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium">120 FOLIOS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed bg-surface-container-low p-2 rounded-lg">
+          "...the tribunal erred fundamentally in concluding that post-award executive notifications could extinguish liquidated damages... rendering the impugned 
+          <mark class="bg-[#f0e3ce] text-[#11100f] px-1 py-0.5 rounded font-medium">arbitral award</mark> 
+          vulnerable under 
+          <mark class="bg-[#f0e3ce] text-[#11100f] px-1 py-0.5 rounded font-medium">Section 34(2A)</mark> 
+          for patent unreasonableness..."
+        </p>
+<div class="flex items-center justify-between pt-1">
+<a class="text-secondary font-title-md text-title-md font-semibold flex items-center gap-1 hover:underline" href="#">
+            View Folio 01 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<button aria-label="Download award PDF" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-secondary rounded">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</article>
+</div>
+<!-- GROUP 02: INDEXED CASES & PRECEDENTS -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-numeral-section text-secondary font-bold">02 /</span>
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Indexed Cases &amp; Precedents</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">6 Matters</span>
+</div>
+<!-- Precedent Card 1 -->
+<article class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 text-secondary text-[10px] font-label-sm uppercase font-bold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Admission Listed • SLP (Civil) Diary No. 41920/2024
+          </div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-serif font-semibold mt-0.5">
+            Union of India vs. K.S. Minerals Ltd. &amp; Anr.
+          </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Appellate challenge against Bombay High Court Division Bench order upholding arbitral finding... dispute involves mineral concession royalty formulas and 
+          <mark class="bg-[#f0e3ce] text-[#11100f] px-1 py-0.5 rounded font-medium">patent illegality</mark> 
+          under 
+          <mark class="bg-[#f0e3ce] text-[#11100f] px-1 py-0.5 rounded font-medium">Section 34(2A)</mark>.
+        </p>
+<div class="bg-surface-container-low px-2.5 py-1.5 rounded-lg flex items-center justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Filed 18 Sep 2026 • Listed Before CJI Bench</span>
+<a class="text-secondary font-semibold hover:underline flex items-center" href="#">
+            Inspect Dossier →
+          </a>
+</div>
+</article>
+<!-- Precedent Card 2 -->
+<article class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-1">
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-1 font-label-sm text-[10px]">
+<span class="bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface font-semibold">(2015) 3 SCC 49</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface-variant">THREE-JUDGE BENCH</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-bold">GOOD LAW</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-serif font-semibold mt-1">
+              Associate Builders v. Delhi Development Authority
+            </h4>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Foundational authority defining public policy of India... award which ignores express terms of contract is perverse and incurs interference under 
+          <mark class="bg-[#f0e3ce] text-[#11100f] px-1 py-0.5 rounded font-medium">Section 34</mark>.
+        </p>
+<div class="bg-surface-container-low px-2.5 py-1.5 rounded-lg flex items-center justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Cited in 19 briefs • 99.8% Concordance</span>
+<a class="text-secondary font-semibold hover:underline flex items-center" href="#">
+            Precedent Memo →
+          </a>
+</div>
+</article>
+</div>
+<!-- GROUP 03: STATUTORY PROVISIONS & ENACTMENTS -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-numeral-section text-secondary font-bold">03 /</span>
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Statutory Provisions &amp; Enactments</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">5 Enactments</span>
+</div>
+<article class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-1 font-label-sm text-[10px] text-on-surface-variant">
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded font-semibold text-on-surface">CENTRAL ACT NO. 26 OF 1996</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded">AMENDED VIA ACT 3 OF 2016</span>
+</div>
+<h4 class="font-title-lg text-title-lg font-serif font-bold text-on-surface mt-1">
+            Section 34(2A) — The Arbitration and Conciliation Act, 1996
+          </h4>
+</div>
+<blockquote class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed bg-surface-container-low p-2.5 rounded-lg">
+          "An <mark class="bg-[#f0e3ce] text-[#11100f] px-1 py-0.5 rounded not-italic font-semibold">arbitral award</mark> arising out of arbitrations other than international commercial arbitrations, may also be set aside by the Court, if the Court finds that the award is vitiated by <mark class="bg-[#f0e3ce] text-[#11100f] px-1 py-0.5 rounded not-italic font-semibold">patent illegality</mark> appearing on the face of the award..."
+        </blockquote>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-[11px] text-on-surface-variant">4 Ingested Folios • 2 Chambers Briefs</span>
+<a class="text-secondary font-title-md text-title-md font-semibold hover:underline" href="#">
+            Statutory History →
+          </a>
+</div>
+</article>
+</div>
+<!-- GROUP 04: PEOPLE & INGESTED ENTITIES -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-numeral-section text-secondary font-bold">04 /</span>
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">People &amp; Ingested Entities</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">5 Entities</span>
+</div>
+<div class="grid grid-cols-1 gap-2">
+<!-- Person 1 -->
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-title-md flex-shrink-0">
+            VN
+          </div>
+<div class="flex flex-col min-w-0">
+<h5 class="font-title-md text-title-md text-on-surface font-semibold truncate">V. Nariman, Senior Advocate</h5>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Lead Counsel for Petitioner • Brief Notes for SLP 41920/2024</p>
+</div>
+</div>
+<!-- Entity 2 -->
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface font-bold text-title-md flex-shrink-0">
+            KS
+          </div>
+<div class="flex flex-col min-w-0">
+<h5 class="font-title-md text-title-md text-on-surface font-semibold truncate">K.S. Minerals Private Limited</h5>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Respondent / Concessionaire • Mining Leaseholder</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ZERO-RESULT / PREVIEW PROTOCOL ACCORDION DRAWER -->
+<section class="px-margin mb-6">
+<div class="bg-surface-container-low rounded-xl p-3 shadow-sm flex flex-col gap-2">
+<button class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md uppercase tracking-wider hover:text-on-surface" id="toggle-empty-state-btn">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">help_outline</span>
+          Simulate Zero-Results State
+        </span>
+<span class="material-symbols-outlined text-[16px] transition-transform" id="empty-state-chevron">expand_more</span>
+</button>
+<!-- Collapsible Empty State Container -->
+<div class="hidden flex-col items-center justify-center text-center p-6 bg-surface-container-lowest rounded-lg gap-2 mt-1" id="empty-state-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[24px]">search_off</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-serif mt-1">No Concordant Legal Authorities Found</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+          No results match this exact formulation. Try searching for a case name, statutory section (e.g. <i>Sec 34</i>), appearing counsel, or active diary folio number.
+        </p>
+<button class="mt-2 bg-secondary text-on-secondary px-4 py-2 rounded-lg font-label-md text-label-md font-semibold active:scale-95 transition-transform" id="restore-search-btn">
+          Reset to Active Index
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function initLegalSearchInteractions() {
+    const searchInput = document.getElementById('search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const toggleEmptyBtn = document.getElementById('toggle-empty-state-btn');
+    const emptyStateCard = document.getElementById('empty-state-card');
+    const emptyChevron = document.getElementById('empty-state-chevron');
+    const resultsStream = document.getElementById('results-stream');
+    const restoreBtn = document.getElementById('restore-search-btn');
+
+    if (clearBtn && searchInput) {
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchInput.focus();
+      });
+    }
+
+    if (toggleEmptyBtn && emptyStateCard) {
+      toggleEmptyBtn.addEventListener('click', () => {
+        const isHidden = emptyStateCard.classList.contains('hidden');
+        if (isHidden) {
+          emptyStateCard.classList.remove('hidden');
+          emptyStateCard.classList.add('flex');
+          if (emptyChevron) emptyChevron.classList.add('rotate-180');
+        } else {
+          emptyStateCard.classList.add('hidden');
+          emptyStateCard.classList.remove('flex');
+          if (emptyChevron) emptyChevron.classList.remove('rotate-180');
+        }
+      });
+    }
+
+    if (restoreBtn && searchInput) {
+      restoreBtn.addEventListener('click', () => {
+        searchInput.value = 'Section 34(2A) patent illegality arbitral award';
+        if (emptyStateCard) {
+          emptyStateCard.classList.add('hidden');
+          emptyStateCard.classList.remove('flex');
+        }
+        if (emptyChevron) emptyChevron.classList.remove('rotate-180');
+        if (resultsStream) resultsStream.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-title-md"><div class="h-16 px-margin flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">gavel</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="documents" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm mt-0.5">Documents</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-primary font-title-md" data-path="search-knowledge" href="#"><span class="material-symbols-outlined text-[24px]">travel_explore</span><span class="font-label-sm text-label-sm mt-0.5">Search</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="vault" href="#"><span class="material-symbols-outlined text-[24px]">lock</span><span class="font-label-sm text-label-sm mt-0.5">Vault</span></a></div></nav></body></html>
