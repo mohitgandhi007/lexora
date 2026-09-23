@@ -1,0 +1,31 @@
+export const Colors = {
+  warmIvory: '#FDF9F2',
+  warmWhite: '#FAF8F4',
+  softStone: '#E3DED6',
+  surfaceContainerLowest: '#FDFCF7',
+  surfaceContainerLow: '#F7F3EC',
+  surfaceContainer: '#F1EDE6',
+  surfaceContainerHigh: '#ECE8E1',
+  surfaceContainerHighest: '#E6E2DB',
+  ink: '#11100F',
+  espresso: '#211B17',
+  warmBrown: '#49382C',
+  mutedBrown: '#756A60',
+  bronze: '#9A7047',
+  antiqueGold: '#C19A5B',
+  burntTerracotta: '#B65F2A',
+  deepBurgundy: '#4A1F1B',
+  border: '#E7E2D8',
+  borderSubtle: '#F0ECE3',
+  outlineVariant: '#CDC5BD',
+  emerald: '#059669',
+  emeraldLight: '#ECFDF5',
+  error: '#BA1A1A',
+  errorLight: '#FEF2F2',
+};
+
+export const Typography = {
+  fontFamilySerif: 'Playfair Display',
+  fontFamilySans: 'Manrope',
+  fontFamilyMono: 'JetBrains Mono',
+};
