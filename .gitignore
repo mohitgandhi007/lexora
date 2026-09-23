@@ -5,3 +5,5 @@ mobile/node_modules/
 mobile/.expo/
 .DS_Store
 *.log
+*.apk
+.vscode/
