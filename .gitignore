@@ -1,9 +1,33 @@
+﻿# Dependencies
 node_modules/
+*/node_modules/
+apps/*/node_modules/
+packages/*/node_modules/
+
+# Builds & Outputs
 dist/
+*/dist/
+apps/*/dist/
 .expo/
-mobile/node_modules/
-mobile/.expo/
-.DS_Store
-*.log
+apps/mobile/.expo/
 *.apk
+*.aab
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+apps/*/.env*
+!apps/*/.env.example
+
+# OS & IDE
+.DS_Store
+Thumbs.db
 .vscode/
+.idea/
+*.log
+
+# Uploads & OCR Models
+uploads/
+apps/api/uploads/
+*.traineddata

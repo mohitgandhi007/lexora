@@ -1,9 +1,9 @@
-
+﻿
 
 
 <div align="center">
 
-# ⚖️ LEXORA
+# âš–ï¸ LEXORA
 
 ### **Understand More. Search Faster.**
 
@@ -27,7 +27,7 @@ An AI-powered legal document intelligence workspace built to transform dense leg
 
 ---
 
-## ◇ What is Lexora?
+## â—‡ What is Lexora?
 
 **Lexora** is an AI-powered legal document intelligence platform designed to help users **read, understand, search, and extract meaningful insights from legal documents.**
 
@@ -46,28 +46,28 @@ Hours of reading
 ### To this:
 
 ```text
-        📄 DOCUMENT
-             │
-             ▼
-        ┌───────────┐
-        │ LEXORA AI │
-        └─────┬─────┘
-              │
-     ┌────────┼────────┐
-     ▼        ▼        ▼
+        ðŸ“„ DOCUMENT
+             â”‚
+             â–¼
+        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+        â”‚ LEXORA AI â”‚
+        â””â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜
+              â”‚
+     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”
+     â–¼        â–¼        â–¼
   Summary   Clauses   Risks
-     │        │        │
-     └────────┼────────┘
-              ▼
+     â”‚        â”‚        â”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+              â–¼
      Structured Insights
-              │
-              ▼
+              â”‚
+              â–¼
        Clear Understanding
 ```
 
 ---
 
-# ✦ The Vision
+# âœ¦ The Vision
 
 Legal information is everywhere.
 
@@ -81,9 +81,9 @@ That's the idea.
 
 ---
 
-# ✦ Core Features
+# âœ¦ Core Features
 
-### 📄 Intelligent Document Workspace
+### ðŸ“„ Intelligent Document Workspace
 
 Upload and organize legal documents in one place.
 
@@ -96,7 +96,7 @@ Upload and organize legal documents in one place.
 
 ---
 
-### 🧠 AI Legal Intelligence
+### ðŸ§  AI Legal Intelligence
 
 Turn lengthy documents into structured insights.
 
@@ -113,29 +113,29 @@ Lexora is designed to surface:
 
 ---
 
-### 🔎 Global Legal Search
+### ðŸ”Ž Global Legal Search
 
 Search across your legal knowledge base instead of opening documents one by one.
 
 ```text
 "termination clause"
-        │
-        ▼
+        â”‚
+        â–¼
    Legal Search
-        │
-        ▼
+        â”‚
+        â–¼
 Relevant Documents
-        │
-        ▼
+        â”‚
+        â–¼
 Relevant Sections
-        │
-        ▼
+        â”‚
+        â–¼
 Exact Context
 ```
 
 ---
 
-### 📑 Document Intelligence Brief
+### ðŸ“‘ Document Intelligence Brief
 
 Each document can be transformed into an **Intelligence Brief** containing the information that matters most.
 
@@ -145,31 +145,31 @@ It's to make the document **understandable.**
 
 ---
 
-### 📤 Seamless Upload Workflow
+### ðŸ“¤ Seamless Upload Workflow
 
 Lexora follows a simple document flow:
 
 ```text
 UPLOAD
-   ↓
+   â†“
 PROCESS
-   ↓
+   â†“
 ANALYZE
-   ↓
+   â†“
 UNDERSTAND
-   ↓
+   â†“
 SEARCH
 ```
 
 ---
 
-### 👤 Personal Legal Workspace
+### ðŸ‘¤ Personal Legal Workspace
 
 A focused workspace for managing documents, summaries, searches, and account settings.
 
 ---
 
-# ✦ Product Flow
+# âœ¦ Product Flow
 
 ```mermaid
 flowchart LR
@@ -184,33 +184,33 @@ F --> G[Legal Knowledge Workspace]
 
 ---
 
-# ✦ Architecture
+# âœ¦ Architecture
 
 Lexora follows a clean separation between the client, API, and data layer.
 
 ```text
-┌─────────────────────────────────────┐
-│              LEXORA                 │
-│                                     │
-│        React + Tailwind             │
-│             Frontend                │
-└──────────────────┬──────────────────┘
-                   │
-                   │ REST API
-                   ▼
-┌─────────────────────────────────────┐
-│              HONO                   │
-│                                     │
-│        API / Middleware Layer       │
-└──────────────────┬──────────────────┘
-                   │
-                   │ Drizzle ORM
-                   ▼
-┌─────────────────────────────────────┐
-│          NEON POSTGRESQL            │
-│                                     │
-│             Data Layer              │
-└─────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              LEXORA                 â”‚
+â”‚                                     â”‚
+â”‚        React + Tailwind             â”‚
+â”‚             Frontend                â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                   â”‚
+                   â”‚ REST API
+                   â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              HONO                   â”‚
+â”‚                                     â”‚
+â”‚        API / Middleware Layer       â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                   â”‚
+                   â”‚ Drizzle ORM
+                   â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚          NEON POSTGRESQL            â”‚
+â”‚                                     â”‚
+â”‚             Data Layer              â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Architecture Principles
@@ -224,7 +224,7 @@ Lexora follows a clean separation between the client, API, and data layer.
 
 ---
 
-# ✦ Tech Stack
+# âœ¦ Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -240,7 +240,7 @@ Lexora follows a clean separation between the client, API, and data layer.
 
 ---
 
-# ✦ Design System
+# âœ¦ Design System
 
 Lexora uses an **Editorial Legal Luxury** visual language.
 
@@ -278,7 +278,7 @@ The interface is intentionally designed to feel closer to a premium legal public
 
 ---
 
-# ✦ Interface
+# âœ¦ Interface
 
 The product is built around a focused legal workspace rather than a conventional dashboard.
 
@@ -286,22 +286,22 @@ The product is built around a focused legal workspace rather than a conventional
 
 ```text
 /
-├── Dashboard
-├── Documents
-│   └── Document Viewer
-├── Upload
-├── AI Summary
-├── Search
-├── Settings
-└── Authentication
-    ├── Login
-    ├── Register
-    └── Forgot Password
+â”œâ”€â”€ Dashboard
+â”œâ”€â”€ Documents
+â”‚   â””â”€â”€ Document Viewer
+â”œâ”€â”€ Upload
+â”œâ”€â”€ AI Summary
+â”œâ”€â”€ Search
+â”œâ”€â”€ Settings
+â””â”€â”€ Authentication
+    â”œâ”€â”€ Login
+    â”œâ”€â”€ Register
+    â””â”€â”€ Forgot Password
 ```
 
 ---
 
-# ✦ Mobile
+# âœ¦ Mobile
 
 Lexora also includes a dedicated mobile experience built with:
 
@@ -312,9 +312,9 @@ The mobile application is designed specifically for smaller screens rather than 
 ### Mobile Navigation
 
 ```text
-┌────────┬───────────┬────────┬─────────┐
-│  Home  │ Documents │ Search │ Profile │
-└────────┴───────────┴────────┴─────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  Home  â”‚ Documents â”‚ Search â”‚ Profile â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Native interactions include:
@@ -328,42 +328,42 @@ Native interactions include:
 
 ---
 
-# ✦ Project Structure
+# âœ¦ Project Structure
 
 ```text
 lexora/
-│
-├── web/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── layouts/
-│   │   ├── services/
-│   │   ├── hooks/
-│   │   └── types/
-│   │
-│   └── ...
-│
-├── mobile/
-│   ├── app/
-│   ├── components/
-│   ├── services/
-│   ├── hooks/
-│   └── ...
-│
-├── backend/
-│   ├── src/
-│   │   ├── routes/
-│   │   ├── middleware/
-│   │   └── ...
-│   └── ...
-│
-└── README.md
+â”‚
+â”œâ”€â”€ web/
+â”‚   â”œâ”€â”€ src/
+â”‚   â”‚   â”œâ”€â”€ components/
+â”‚   â”‚   â”œâ”€â”€ pages/
+â”‚   â”‚   â”œâ”€â”€ layouts/
+â”‚   â”‚   â”œâ”€â”€ services/
+â”‚   â”‚   â”œâ”€â”€ hooks/
+â”‚   â”‚   â””â”€â”€ types/
+â”‚   â”‚
+â”‚   â””â”€â”€ ...
+â”‚
+â”œâ”€â”€ mobile/
+â”‚   â”œâ”€â”€ app/
+â”‚   â”œâ”€â”€ components/
+â”‚   â”œâ”€â”€ services/
+â”‚   â”œâ”€â”€ hooks/
+â”‚   â””â”€â”€ ...
+â”‚
+â”œâ”€â”€ backend/
+â”‚   â”œâ”€â”€ src/
+â”‚   â”‚   â”œâ”€â”€ routes/
+â”‚   â”‚   â”œâ”€â”€ middleware/
+â”‚   â”‚   â””â”€â”€ ...
+â”‚   â””â”€â”€ ...
+â”‚
+â””â”€â”€ README.md
 ```
 
 ---
 
-# ✦ Getting Started
+# âœ¦ Getting Started
 
 ## Prerequisites
 
@@ -438,7 +438,7 @@ EXPO_PUBLIC_API_BASE_URL=your_api_url
 
 ---
 
-# ✦ Running Locally
+# âœ¦ Running Locally
 
 ### Frontend
 
@@ -468,50 +468,50 @@ Expo Go
 
 ---
 
-# ✦ API Layer
+# âœ¦ API Layer
 
 The frontend communicates with the backend through dedicated service modules.
 
 ```text
 services/
-│
-├── authApi.ts
-├── documentsApi.ts
-├── summariesApi.ts
-└── searchApi.ts
+â”‚
+â”œâ”€â”€ authApi.ts
+â”œâ”€â”€ documentsApi.ts
+â”œâ”€â”€ summariesApi.ts
+â””â”€â”€ searchApi.ts
 ```
 
 This keeps UI components independent from backend implementation details.
 
 ---
 
-# ✦ Development Philosophy
+# âœ¦ Development Philosophy
 
 Lexora is built around a few simple principles.
 
-### 01 — Clarity over complexity
+### 01 â€” Clarity over complexity
 
 Legal software doesn't need to feel complicated.
 
-### 02 — Information over decoration
+### 02 â€” Information over decoration
 
 Every visual element should help users understand or navigate information.
 
-### 03 — Structure matters
+### 03 â€” Structure matters
 
 Unstructured legal text becomes more useful when transformed into meaningful information.
 
-### 04 — AI should assist understanding
+### 04 â€” AI should assist understanding
 
 Lexora is designed to help users interpret and navigate documents, not blindly replace professional legal judgment.
 
-### 05 — Premium doesn't mean excessive
+### 05 â€” Premium doesn't mean excessive
 
 The interface uses typography, spacing, hierarchy, and restrained color rather than endless cards, gradients, and animations.
 
 ---
 
-# ✦ Roadmap
+# âœ¦ Roadmap
 
 - [x] Editorial legal design system
 - [x] Dashboard
@@ -534,7 +534,7 @@ The interface uses typography, spacing, hierarchy, and restrained color rather t
 
 ---
 
-# ✦ Security & Privacy
+# âœ¦ Security & Privacy
 
 Legal documents can contain highly sensitive information.
 
@@ -542,11 +542,11 @@ Lexora is designed with separation between:
 
 ```text
 Client
-  ↓
+  â†“
 API
-  ↓
+  â†“
 Authentication
-  ↓
+  â†“
 Database
 ```
 
@@ -564,7 +564,7 @@ Production deployments should additionally implement:
 
 ---
 
-# ✦ Disclaimer
+# âœ¦ Disclaimer
 
 **Lexora is an information and document-intelligence tool.**
 
@@ -574,7 +574,7 @@ Always verify important information against the original document and consult a 
 
 ---
 
-# ✦ Contributing
+# âœ¦ Contributing
 
 Contributions, ideas, and improvements are welcome.
 
@@ -595,7 +595,7 @@ Before submitting a PR:
 
 ---
 
-# ✦ Team
+# âœ¦ Team
 
 Built with caffeine, questionable sleep schedules, and an unreasonable amount of attention to typography.
 
@@ -607,7 +607,7 @@ Built with caffeine, questionable sleep schedules, and an unreasonable amount of
 
 <br/>
 
-⚖️ · 📄 · 🧠 · 🔎
+âš–ï¸ Â· ðŸ“„ Â· ðŸ§  Â· ðŸ”Ž
 
 <br/>
 
@@ -615,3 +615,4 @@ Built with caffeine, questionable sleep schedules, and an unreasonable amount of
 
 </div>
 ```
+
